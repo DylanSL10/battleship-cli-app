@@ -103,7 +103,14 @@ function getUserGuess(board) {
     printBoard(board, false);
 
     if (allShipsSunk(board)) {
-      console.log("Congratulations! You sank all the ships! 🎉");
+      console.log(`========
+__   _______ _   _   _    _ _____ _   _
+\ \ / /  _  | | | | | |  | |_   _| \ | |
+ \ V /| | | | | | | | |  | | | | |  \| |
+  \ / | | | | | | | | |/\| | | | | . ' |
+  | | \ \_/ / |_| | \  /\  /_| |_| |\  |
+  \_/  \___/ \___/   \/  \/ \___/\_| \_/
+========`);
       rl.close();
     } else {
       getUserGuess(board);
